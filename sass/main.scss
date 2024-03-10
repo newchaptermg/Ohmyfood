@@ -1,0 +1,228 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color: #fff;
+$secbg-color: #dfdbdb;
+$tertiarybackground-color:#f6f6f6;
+$fourthbackground-color: #eaeaea;
+$icon-color:#7e7e7e;
+$text-color: #333;
+$card-background: #f9f9f9;
+$card-shadow: rgba(0, 0, 0, 0.1);
+
+$font-logo-titles: 'Shrikhand';
+$font-text: 'Roboto', sans-serif;
+
+body {
+    font-family: $font-text;
+    margin: 0;
+    background-color: $background-color;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    .logo {
+        font-family: $font-logo-titles;
+        height: 30px;
+        width: auto;
+        padding: 15px;
+        ;
+    }
+
+    .location {
+
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
+        background-color: $secbg-color;
+        padding: 1rem 0;
+
+        .icon {
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.intro {
+    text-align: center;
+    padding: 10px;
+    background-color: $tertiarybackground-color;
+
+    h1 {
+        font-family: $font-text;
+        font-size: 20px;
+    }
+
+    .explore-button {
+        background: linear-gradient(360deg, $primary-color, $secondary-color);
+        color: $background-color;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}
+
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1rem;
+
+        .number {
+            background-color: $primary-color;
+            color: $background-color;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .description {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.restaurants {
+    background-color: $background-color;
+    padding: 2rem;
+
+    h2 {
+        color: $text-color;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+
+        .restaurant-item {
+            background-color: $card-background;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px $card-shadow;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px $card-shadow;
+            }
+
+            .restaurant-img {
+                width: 100%;
+                object-fit: cover;
+                height: 150px;
+            }
+
+            .restaurant-info {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+
+                h3 {
+
+                    margin: 0;
+                    color: $text-color;
+                    font-family: $font-logo-titles;
+                }
+
+                .restaurant-location {
+                    color: $text-color;
+                    font-size: 0.9rem;
+                    font-family: $font-text;
+                }
+
+                .restaurant-favorite {
+                    background: none;
+                    border: none;
+                    color: $secondary-color;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: darken($secondary-color, 10%);
+                    }
+                }
+
+                .restaurant-favorite.unfilled {
+                    color: $text-color; // Unfilled color
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $secondary-color;
+    color: $background-color;
+    padding: 1rem;
+
+    nav {
+        display: flex;
+        justify-content: center;
+
+        a {
+            color: $background-color;
+            text-decoration: none;
+            margin: 0 1rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row; // Reverts to row direction for larger screens
+        justify-content: space-between; // Spreads the items on larger screens
+        align-items: center;
+        text-align: left;
+
+        .logo {
+            height: 50px; // Larger size for larger screens
+            margin-bottom: 0; // Removes the bottom margin on larger screens
+        }
+
+        .location {
+            justify-content: flex-start; // Aligns location to the start
+            font-size: 0.9rem; // Adjust for larger screens
+        }
+    }
+
+    .restaurants {
+        .restaurant-list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}

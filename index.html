@@ -4,48 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Ohmyfood</title>
+    <title>Ohmyfood - Discover Gourmet Menus</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <img src="images/logo/ohmyfood.png" alt="Ohmyfood Logo">
-    </header>
-    <main>
+        <img src="images/logo/ohmyfood.png" alt="Ohmyfood logo" class="logo">
         <div class="location">
-            <i class="fas fa-map-marker-alt search-form-pin"></i>
-            <input type="text" placeholder="Paris, Belliville">
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span>Paris, Belleville</span>
         </div>
-        <div class="header-text">
-            <h2> Book the menu you like</h2>
-            <p> Discover top-of-the-art restaurants we picked for you</p>
-          </div>
+    </header>
 
-        <section class="menu">
-            <!-- Restaurant 1 -->
-            <div class="restaurant">
-                <img src="Ohmyfood EN/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Jay-wennington">
-                <h2>Restaurant 1 Name</h2>
-                <!-- Menu items for Restaurant 1 -->
-                <ul>
-                    <li>Dish 1</li>
-                    <li>Dish 2</li>
-                    <!-- Add more dishes as needed -->
-                </ul>
-            </div>
-
-            <!-- Repeat similar structure for other restaurants -->
-
+    <main>
+        <section class="intro">
+            <h1>Book the menu you like</h1>
+            <p>Discover top-of-the-art restaurants we picked for you</p>
+            <button class="explore-button">Explore our restaurants</button>
         </section>
 
+        <section class="how-it-works">
+            <h2>How it works </h2>
+            <div class="step">
+                <span class="number">1</span>
+                <span class="description">Chose a restaurant</span>
+            </div>
+            <div class="step">
+                <span class="number">2</span>
+                <span class="description">Create your menu</span>
+            </div>
+            <div class="step">
+                <span class="number">3</span>
+                <span class="description">Go enjoy it at the restaurant</span>
+            </div>
+        </section>
+
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurant-list">
+                <div class="restaurant-item">
+                    <img src="images/restaurants/jay-wennington.jpg" alt="The Full Palette Restaurant"
+                        class="restaurant-img">
+                    <div class="restaurant-info">
+                        <h3>The Full Palette</h3>
+                        <p class="restaurant-location">New York</p> 
+                        <button class="restaurant-favorite">♥</button>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <img src="images/restaurants/stil-u2Lp8tXIcjw.jpg" alt="The Enchanted Plate Restaurant"
+                        class="restaurant-img">
+                    <div class="restaurant-info">
+                        <h3>The Enchanted Plate</h3>
+                        <p class="restaurant-location">New York</p>
+                        <button class="restaurant-favorite">♥</button>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <img src="images/restaurants/toa-heftiba.jpg" alt="Bastille Restaurant" class="restaurant-img">
+                    <div class="restaurant-info">
+                        <h3>Bastille</h3>
+                        <p class="restaurant-location">New York</p>
+                        <button class="restaurant-favorite">♥</button>
+                    </div>
+                </div>
+                <div class="restaurant-item">
+                    <img src="images/restaurants/louis-hansel.jpg" alt="Le Gourmand Restaurant" class="restaurant-img">
+                    <div class="restaurant-info">
+                        <h3>Le Gourmand</h3>
+                        <p class="restaurant-location">New York</p>
+                        <button class="restaurant-favorite">♥</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p><a href="mailto:contact@ohmyfood.com">Contact</a></p>
+        <nav>
+            <a href="#">Suggest a restaurant</a>
+            <a href="#">Become a partner</a>
+            <a href="#">Legal</a>
+            <a href="#">Contact</a>
+        </nav>
     </footer>
-
-
 </body>
 
 </html>
