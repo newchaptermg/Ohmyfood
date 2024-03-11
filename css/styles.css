@@ -59,30 +59,37 @@ header .location .icon {
   flex-direction: column;
   justify-content: center;
   margin: 2rem 0;
+  gap: 25px;
 }
 .how-it-works .step {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin: 0 1rem;
+  height: 75px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  background: #f6f6f6;
+  margin: 0 20px 0 30px;
+  gap: 20px;
 }
 .how-it-works .step .number {
   background-color: #9356DC;
   color: #fff;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  margin-left: -15px;
 }
-.how-it-works .step .description {
-  margin-top: 0.5rem;
+.how-it-works .step i {
+  font-size: 20px;
+  color: #7e7e7e;
 }
 
 .restaurants {
-  background-color: #fff;
+  background-color: #f6f6f6;
   padding: 2rem;
 }
 .restaurants h2 {
@@ -113,7 +120,7 @@ header .location .icon {
 }
 .restaurants .restaurant-list .restaurant-item .restaurant-info {
   display: flex;
-  flex-direction: column;
+  align-self: auto;
   padding: 1rem;
 }
 .restaurants .restaurant-list .restaurant-item .restaurant-info h3 {
