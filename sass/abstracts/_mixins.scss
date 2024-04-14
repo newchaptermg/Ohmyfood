@@ -1,0 +1,11 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    
+}
+
+@mixin theme-gradient {
+    background: linear-gradient(360deg, $primary-color, $secondary-color);
+}
+
+

@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -52,22 +54,34 @@
             <h2>Restaurants</h2>
             <div class="restaurant-list">
                 <div class="restaurant-item">
+                    <div class="new-label">New</div>
                     <img src="images/restaurants/jay-wennington.jpg" alt="The Full Palette Restaurant"
                         class="restaurant-img">
                     <div class="restaurant-info">
                         <h3>The Full Palette</h3>
                         <p class="restaurant-location">New York</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <div class="restaurant-favorite-unfilled">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="restaurant-favorite">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
                     </div>
                 </div>
 
                 <div class="restaurant-item">
+                    <div class="new-label">New</div>
                     <img src="images/restaurants/stil-u2Lp8tXIcjw.jpg" alt="The Enchanted Plate Restaurant"
                         class="restaurant-img">
                     <div class="restaurant-info">
                         <h3>The Enchanted Plate</h3>
                         <p class="restaurant-location">New York</p>
-                        <i class="fa-solid fa-heart"></i>
+                        <div class="restaurant-favorite-unfilled">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="restaurant-favorite">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -76,7 +90,12 @@
                     <div class="restaurant-info">
                         <h3>Bastille</h3>
                         <p class="restaurant-location">New York</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <div class="restaurant-favorite-unfilled">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="restaurant-favorite">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="restaurant-item">
@@ -84,7 +103,12 @@
                     <div class="restaurant-info">
                         <h3>Le Gourmand</h3>
                         <p class="restaurant-location">New York</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <div class="restaurant-favorite-unfilled">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="restaurant-favorite">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,13 +116,21 @@
     </main>
 
     <footer>
-        <nav>
-            <a href="#">Suggest a restaurant</a>
-            <a href="#">Become a partner</a>
-            <a href="#">Legal</a>
-            <a href="#">Contact</a>
-        </nav>
+        <div class="footer-content">
+            <img src="images/logo/ohmyfood.png" alt="Ohmyfood logo" class="footer-logo">
+            <div class="footer-links">
+                <a href="#" class="footer-link">
+                    <i class="fas fa-utensils"></i> Suggest a restaurant
+                </a>
+                <a href="#" class="footer-link">
+                    <i class="fas fa-handshake"></i> Become a partner
+                </a>
+                <a href="#" class="footer-link">Legal</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>

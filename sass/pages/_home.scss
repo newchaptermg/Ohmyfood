@@ -1,0 +1,139 @@
+.intro {
+    text-align: center;
+    padding: 40px;
+    background-color: $tertiarybackground-color;
+}
+
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 25px;
+}
+
+
+
+.step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    // box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 5px 5px;
+    border-radius: 25px;
+    background: $tertiarybackground-color;
+    margin: 0 20px 0 30px;
+    gap: 20px;
+
+    &:hover {
+        background-color: lighten($primary-color, 35%);          
+        i {
+            color: $primary-color; 
+          }
+      }
+
+    .number {
+        background-color: $primary-color;
+        color: $background-color;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -15px;
+    }
+
+    i {
+        font-size: 20px;
+        color: $icon-color;        
+    }
+
+    
+}
+
+.restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+
+    .restaurant-item {
+        background-color: $card-background;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px $card-shadow;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+
+        .new-label {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            background-color: $tertiary-color; 
+            color: $label-color; 
+            padding: 5px 25px;             
+            font-size: 0.9em; 
+            
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px $card-shadow;
+        }
+
+        .restaurant-img {
+            width: 100%;
+            object-fit: cover;
+            height: 170px;
+        }
+
+        .restaurant-info {
+            padding: 10px;
+            position: relative;
+            height: 50px;
+            
+
+            h3 {
+                margin: 0;
+                padding-top: 0;
+                color: $text-color;
+
+            }
+
+            .restaurant-location {
+                color: $text-color;
+                font-size: 0.9rem;
+                font-family: $font-text;
+                position: absolute;
+                top: 45%;
+            }
+
+            .restaurant-favorite {
+                position: absolute;
+                top: 30%;
+                left: 85%;
+                background: none;
+                opacity: 0;
+                border: none;
+                // color: $secondary-color;
+                font-size: 1.5rem;
+                cursor: pointer;
+                transition: opacity 0.3s ease;
+
+                &:hover {                    
+                    color: mix($primary-color,$secondary-color,55%);
+                    opacity: 1;
+                }
+            }
+
+            .restaurant-favorite-unfilled {
+                position: absolute;
+                top: 30%;
+                left: 85%;
+                color: $text-color;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
