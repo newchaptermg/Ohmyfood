@@ -3,8 +3,36 @@ h1 {
     font-size: 20px;
 }
 
-h2, h3, h4, h5, h6 {
+h2 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+
+h2,
+h3,
+h6 {
     color: $text-color;
     font-weight: bold;
 }
 
+h4 {
+    font-family: $font-logo-titles;
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+h5 {
+    font-family: $font-logo-titles;
+    font-size: 24px;    
+    text-wrap:wrap;
+    margin-left: 20px;
+}
+
+
+h7 {
+    font-size: large;
+    padding: 20px;
+    margin-left: 20px;
+}

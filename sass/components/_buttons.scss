@@ -1,4 +1,4 @@
-.explore-button {
+.explore-button, .order-button {
     @include theme-gradient;
     color: $background-color;
     border: none;
@@ -17,15 +17,12 @@
 }
 
 
-.order-button {
-    background-color: $button-color;
-    border: none;
-    border-radius: 20px;
-    color: $background-color;
+.order-button {       
     padding: 1rem 2rem;
     font-weight: bold;
-    margin: 2rem auto;
+    margin: 5px 30px 70px 70px;
     display: block;
-    width: calc(100% - 4rem);
+    width: calc(100% - 9rem);
     text-align: center;
+    
 }

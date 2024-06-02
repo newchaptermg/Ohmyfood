@@ -1,11 +1,35 @@
 @mixin flex-center {
     display: flex;
     justify-content: center;
-    
+
 }
 
 @mixin theme-gradient {
     background: linear-gradient(360deg, $primary-color, $secondary-color);
 }
 
+@mixin favorite {
+    position: absolute;
 
+    left: 85%;
+    background: none;
+    opacity: 0;
+    border: none;
+    // color: $secondary-color;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        color: mix($primary-color, $secondary-color, 55%);
+        opacity: 1;
+    }
+}
+
+@mixin favorite-unfilled {
+    position: absolute;
+
+    left: 85%;
+    color: $text-color;
+    font-size: 1.5rem;
+}
