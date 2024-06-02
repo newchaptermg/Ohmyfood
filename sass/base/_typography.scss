@@ -8,7 +8,10 @@ h2 {
     margin-left: 20px;
 }
 
-
+p {
+    font-family: $font-text;
+    font-size: 13px; 
+}
 
 h2,
 h3,
@@ -16,6 +19,8 @@ h6 {
     color: $text-color;
     font-weight: bold;
 }
+
+
 
 h4 {
     font-family: $font-logo-titles;
