@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - À la française</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link
@@ -16,19 +16,20 @@
 <body>
     <header>
         <div class="subheader">
-            <a href="index.html" class="back-button">
+            <a href="/index.html" class="back-button">
                 <i class="fa-solid fa-arrow-left"></i></a>
-            <img src="images/logo/ohmyfood.png" alt="ohmyfood logo" class="logo">
+            <img src="/images/logo/ohmyfood.png" alt="ohmyfood logo" class="logo">
         </div>
     </header>
     <main>
-        <section class="subrestaurant">
-            <img src="images/restaurants/louis-hansel.jpg" alt="Le Gourmand" class="restaurant-img">
+        <section class="subrestaurant" aria-label="Restaurant Image">
+            
+            <img src="/images/restaurants/toa-heftiba.jpg" alt="Bastille Restaurant" class="restaurant-img">
         </section>
-        <section class="menu-section">
+        <section class="menu-section" aria-label="Menu">
             <div class="menu-store">
                 <div class="menu-title">
-                    <h5>Le Gourmand</h5>
+                    <h4>Bastille</h4>
                 </div>
                 <div class="menu-favorite-unfilled">
                     <i class="fa-regular fa-heart"></i>
@@ -45,8 +46,8 @@
                     <div class="menu-item">
                         <div class="menu-item-animator">
                             <div class="menu-item-content">
-                                <h3 class="menu-item-name">Tuna Carpaccio</h3>
-                                <p class="menu-item-flavor">Seasoned with yuzu</p>
+                                <h3 class="menu-item-name">Citrus Squid Carpaccio</h3>
+                                <p class="menu-item-flavor">With orange zest</p>
                             </div>
                             <div class="menu-item-price">25€</div>
                             <div class="menu-item-tick">
@@ -57,8 +58,8 @@
                     <div class="menu-item">
                         <div class="menu-item-animator">
                             <div class="menu-item-content">
-                                <h3 class="menu-item-name">Crunchy Lobster Croquets</h3>
-                                <p class="menu-item-flavor">With seasonal vegetables</p>
+                                <h3 class="menu-item-name">Grandmother's Vegetable Soup</h3>
+                                <p class="menu-item-flavor">Carrots,parsnips,Jerusalem artichoke</p>
                             </div>
                             <div class="menu-item-price">35€</div>
                             <div class="menu-item-tick">
@@ -69,8 +70,8 @@
                     <div class="menu-item">
                         <div class="menu-item-animator">
                             <div class="menu-item-content">
-                                <h3 class="menu-item-name">Mushroom soup</h3>
-                                <p class="menu-item-flavor">With truffles</p>
+                                <h3 class="menu-item-name">Onion Soup</h3>
+                                <p class="menu-item-flavor">Revisited</p>
                             </div>
                             <div class="menu-item-price">20€</div>
                             <div class="menu-item-tick">
@@ -88,8 +89,8 @@
                     <div class="menu-item">
                         <div class="menu-item-animator">
                             <div class="menu-item-content">
-                                <h3 class="menu-item-name-ext">Roast Chicken with Provincal Herbs</h3>
-                                <p class="menu-item-flavor">With truffle cream</p>
+                                <h3 class="menu-item-name">Scallops</h3>
+                                <p class="menu-item-flavor">With mashed parsnip</p>
                             </div>
                             <div class="menu-item-price">40€</div>
                             <div class="menu-item-tick">
@@ -100,8 +101,8 @@
                     <div class="menu-item">
                         <div class="menu-item-animator">
                             <div class="menu-item-content">
-                                <h3 class="menu-item-name">Roasted Lobster</h3>
-                                <p class="menu-item-flavor">With seasonal vegetables</p>
+                                <h3 class="menu-item-name">Margret de canard</h3>
+                                <p class="menu-item-flavor">With mashed potatoes</p>
                             </div>
                             <div class="menu-item-price">35€</div>
                             <div class="menu-item-tick">
@@ -112,8 +113,8 @@
                     <div class="menu-item">
                         <div class="menu-item-animator">
                             <div class="menu-item-content">
-                                <h3 class="menu-item-name">Angust Beef Ribs</h3>
-                                <p class="menu-item-flavor">With mashed parshnips</p>
+                                <h3 class="menu-item-name">Game Hen</h3>
+                                <p class="menu-item-flavor">With vegetable gnocchi</p>
                             </div>
                             <div class="menu-item-price">44€</div>
                             <div class="menu-item-tick">
@@ -131,8 +132,8 @@
                     <div class="menu-item">
                         <div class="menu-item-animator">
                             <div class="menu-item-content">
-                                <h3 class="menu-item-name">Assorted Dessert Plate</h3>
-                                <p class="menu-item-flavor">Chef's choice</p>
+                                <h3 class="menu-item-name">Floral Ice Cream</h3>
+                                <p class="menu-item-flavor">With hazelnut butter</p>
                             </div>
                             <div class="menu-item-price">18€</div>
                             <div class="menu-item-tick">
@@ -143,8 +144,8 @@
                     <div class="menu-item">
                         <div class="menu-item-animator">
                             <div class="menu-item-content">
-                                <h3 class="menu-item-name">Crème brulée</h3>
-                                <p class="menu-item-flavor">Revisted</p>
+                                <h3 class="menu-item-name">Chocolate Lava Cake</h3>
+                                <p class="menu-item-flavor">Revisited</p>
                             </div>
                             <div class="menu-item-price">22€</div>
                             <div class="menu-item-tick">
@@ -155,8 +156,8 @@
                     <div class="menu-item">
                         <div class="menu-item-animator">
                             <div class="menu-item-content">
-                                <h3 class="menu-item-name">Tiramisu</h3>
-                                <p class="menu-item-flavor">With hazelnuts</p>
+                                <h3 class="menu-item-name">Napolean</h3>
+                                <p class="menu-item-flavor">With blueberries and marzipan</p>
                             </div>
                             <div class="menu-item-price">23€</div>
                             <div class="menu-item-tick">
@@ -172,7 +173,7 @@
     </main>
     <footer>
         <div class="footer-content">
-            <img src="images/logo/ohmyfood.png" alt="Ohmyfood logo" class="footer-logo">
+            <img src="/images/logo/ohmyfood.png" alt="Ohmyfood logo" class="footer-logo">
             <div class="footer-links">
                 <a href="#" class="footer-link">
                     <i class="fas fa-utensils"></i> Suggest a restaurant

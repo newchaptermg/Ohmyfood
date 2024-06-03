@@ -62,31 +62,27 @@
 }
 
 .menu-items {
- 
+
   .menu-type {
     position: relative;
     display: inline-block;
     font-size: 15px;
     padding: 25px 10px 5px 10px;
-    
-    
+
+
 
     &::after {
       content: '';
       position: absolute;
       left: 10px;
-      bottom: 3px;
-      width: 0;
-      height: 4px;
-      background-color: $tertiary-color; 
-      transition: width 0.4s ease; 
-    }
-
-    &:hover::after {
+      bottom: 2px;
       width: 43%;
+      height: 3px;
+      background-color: $tertiary-color;
     }
 
-  
+
+
   }
 
   .menu-item {
@@ -103,7 +99,7 @@
 
     overflow: hidden;
     width: 100%;
-    
+
 
     &:hover .menu-item-animator {
       width: 100%;
@@ -137,22 +133,22 @@
           margin: 0 20px 0 10px;
           font-family: $font-text;
           font-size: 17px;
-          font-weight: bolder;          
+          font-weight: bolder;
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
-        }      
-        
-        
+        }
+
+
         .menu-item-name-ext {
           margin: 0px 20px 0px 10px;
           font-family: $font-text;
           font-size: 17px;
-          font-weight: bolder;          
+          font-weight: bolder;
           text-overflow: ellipsis;
           overflow: visible;
-          white-space: normal;         
-          
+          white-space: normal;
+
         }
 
         .menu-item-flavor {
@@ -201,13 +197,13 @@
           height: 30%;
           border-radius: 50%;
 
-              
+
         }
       }
 
     }
 
-   
+
 
   }
 
@@ -246,58 +242,31 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
- 
-  .menu-section {
-    border-radius: 25px 25px 0 0; 
-  } 
 
-  .menu-items .menu-item {    
-    padding: 10px; 
-    height: 60px;     
+
+  .menu-section {    
+    max-width: 600px;
+    margin: auto;
   }
 
-  .menu-item-text .menu-item-name {
-       font-size: 16px; 
+  .order-button {     
+    width:15%; 
+    max-width: 16%;
   }
-
-  .menu-item-detail {
-    font-size: 13px; 
-  }
-
-  .menu-item-tick {
-    padding-top: -10px;
-  }
+  
 }
 
-@media (min-width: 1024px) {  
+@media (min-width: 1024px) {
 
-  main {
-    .menu-item{
-      display: flex;
-      flex: row;
-    }
+  .menu-section {
+
+    max-width: 800px;
+    margin: auto;
   }
-  // .menu-items .menu-cards .menu-item-animator {
-  //   display: flex;      
-  //   flex-wrap: wrap; 
-  // }
- 
-  
 
-  // .menu-items .menu-item {        
-  //   // padding: 20px 0; 
-  //   height: 70px; 
-  // }
- 
-  // .menu-item-text .menu-item-name {
-    
-  //   font-size: 18px; 
-  // }
-
-  // .menu-item-detail {
-  //   font-size: 15px; 
-  // }
- 
-
+  .order-button {   
+    width:10%; 
+    max-width: 11%;
+  }
 
 }
